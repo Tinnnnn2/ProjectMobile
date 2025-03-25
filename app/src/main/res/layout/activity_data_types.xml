@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9FFC107"
+    tools:context=".DataTypesActivity">
+
+    <!-- หัวข้อ -->
+
+    <!-- ปุ่มย้อนกลับ -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFCC"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Data Types"
+        android:textColor="#2E0B06"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackDataType"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#106420"
+        android:drawableBottom="@android:drawable/ic_media_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView4" />
+
+    <!-- ไอคอน -->
+
+    <!-- ScrollView ครอบเนื้อหาทั้งหมด -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="87dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView4"
+        app:layout_constraintVertical_bias="0.558"
+        app:srcCompat="@drawable/datatypes" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="369dp"
+        android:layout_height="403dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
+
+            <TextView
+                android:id="@+id/textVariable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="          Data Type หรือที่เรียกว่า ประเภทข้อมูล        ในภาษาจาวามีประเภทข้อมูลพื้นฐานทั้งหมด 8 ชนิด 4 กลุ่ม ซึ่งจะเรียกว่า Primitive Data Type ดังนี้
+
+
+                            ➢ Logical ได้แก่ boolean
+
+
+                            ➢ Textual ได้แก่ char
+
+
+                            ➢ Integer ได้แก่ byte, short, int และ long
+
+
+                            ➢ Floating-point ได้แก่ float และ double"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/tableDatatype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/table_datatype" />
+
+            <TextView
+                android:id="@+id/textVariable2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="ภาษาจาวาได้สร้างคลาสไว้สำหรับจัดเก็บข้อมูลแบบข้อความ มีชื่อคลาสว่า String เพื่อให้สามารถทำงานเหมือนชนิดข้อมูลพื้นฐาน เพราะฉะนั้นจะถือว่า String ไม่ใช่
+
+      Primitive Data Type"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

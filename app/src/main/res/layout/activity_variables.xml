@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9FFC107"
+    tools:context=".DataTypesActivity">
+
+    <!-- หัวข้อ -->
+
+    <!-- ปุ่มย้อนกลับ -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFCC"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Variable"
+        android:textColor="#2E0B06"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackDataType"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#106420"
+        android:drawableBottom="@android:drawable/ic_media_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView4" />
+
+    <!-- ไอคอน -->
+
+    <!-- ScrollView ครอบเนื้อหาทั้งหมด -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="87dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView4"
+        app:layout_constraintVertical_bias="0.558"
+        app:srcCompat="@drawable/variable" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="369dp"
+        android:layout_height="403dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
+
+            <TextView
+                android:id="@+id/textVariable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="          ตัวแปร (Variable)
+
+❑ ตัวแปร คือ ชื่อที่ถูกกำหนดขึ้นเพื่อใช้ในการเก็บข้อมูล ซึ่งค่าของตัวแปรสามารถเปลี่ยนแปลงได้ตลอดการทำงานของโปรแกรม โดยการตั้งชื่อตัวแปรต้องเป็นไปตามกฎการตั้งชื่อ
+
+❑ ตัวแปรในภาษาจาวา สามารถแบ่งออกเป็น 3 ประเภทหลัก ดังนี้:
+
+
+1. Instance Variable เป็นตัวแปรที่ถูกสร้างขึ้นจากคลาสเพื่อกำหนดโครงสร้างต่างๆ ของคลาส (เป็นตัวแปรชนิดที่มีคลาส)
+2. Class Variable เป็นตัวแปรที่ถูกกำหนดหรือสร้างขึ้นภายในคลาส สามารถนำไปประยุกต์ใช้กับ Instance variable ของมันทั้งหมด
+3. Local Variable เป็นตัวแปรที่ประกาศภายในเมธอด (Method) สามารถใช้งานได้เฉพาะภายในขอบเขตที่มันถูกประกาศเท่านั้น
+
+"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="การสร้างตัวแปร                                                          ❑ การสร้างตัวแปรประกอบด้วย ชื่อ และ ชนิดข้อมูล รวมถึงค่าเริ่มต้นที่กำหนดให้ด้วย รูปแบบการประกาศตัวแปรคือ:                                  ชนิดข้อมูล  ชื่อตัวแปร; ตัวอย่าง: int age;                                                                                                                                                                                                                                                                    ชนิดข้อมูล ชื่อตัวแปร = ค่าข้อมูล; ตัวอย่าง: float salary = 56.7;                                                     ❑ และหากต้องการประกาศตัวแปรหลายๆ ตัวในคำสั่งเดียว จะต้องใช้เครื่องหมาย คอมม่า (,) คั่นระหว่างชื่อของตัวแปร                                                                ชนิดข้อมูล ชื่อตัวแปร1, ชื่อตัวแปร2, ชื่อตัวแปร3;                                                                   ตัวอย่าง: int day, month, year;  "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="การกำหนดค่าให้กับตัวแปร
+❑ การกำหนดค่าให้กับตัวแปรสามารถทำได้โดยใช้เครื่องหมาย เท่ากับ (=) ซึ่งมีเงื่อนไขว่า ค่าที่กำหนดให้กับตัวแปรต้องมี ชนิดข้อมูลที่ตรงกัน เช่น:
+int age = 23;
+int day = 0, month = 0, year = 0;\n
+
+❑ เมื่อตัวแปรถูกประกาศขึ้นแล้ว จะต้องกำหนดค่าให้กับตัวแปรเอง
+
+Java จะไม่กำหนดค่าเริ่มต้นให้กับตัวแปรท้องถิ่น (Local Variable) โดยอัตโนมัติ
+
+หากมีการเรียกใช้งานตัวแปรที่ยังไม่ได้รับการกำหนดค่า คอมไพเลอร์จะแจ้งข้อผิดพลาดว่า
+
+variable might not have been initialized  ซึ่งหมายความว่า ตัวแปรนั้นอาจยังไม่มีค่าเริ่มต้น
+"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
