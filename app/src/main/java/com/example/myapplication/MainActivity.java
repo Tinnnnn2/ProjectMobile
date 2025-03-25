@@ -9,7 +9,8 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnGetStart;
+    private Button btnGetStart,btnHum;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
