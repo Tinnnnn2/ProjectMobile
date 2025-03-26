@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_list" android:title="ตัวระบุ JavaScript"/>
+    <item android:id="@+id/action_conston" android:title="ผู้ดำเนินการมอบหมาย"/>
+    <item android:id="@+id/action_grid" android:title="ประเภทข้อมูล JavaScript"/>
+    <item android:id="@+id/action_scroll" android:title="การประกาศตัวแปร JavaScript"/>
+    <item android:id="@+id/action_web" android:title="หนึ่งคำสั่ง หลายตัวแปร"/>
+    <item android:id="@+id/action_search" android:title="ค่า = ไม่ได้กำหนด"/>
+</menu>

@@ -15,7 +15,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="76dp"
         android:background="#FFFFCC"
         android:gravity="center"
         android:padding="16dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnBackDataType"
+        android:id="@+id/btnBackVariable"
         android:layout_width="68dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -55,8 +55,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="369dp"
-        android:layout_height="403dp"
+        android:layout_width="360dp"
+        android:layout_height="472dp"
         android:layout_marginTop="20dp"
         android:fillViewport="false"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,21 +71,17 @@
             android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
 
             <TextView
-                android:id="@+id/textVariable"
+                android:id="@+id/textDatatype"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
                 android:padding="16dp"
-                android:text="          ตัวแปร (Variable)
-
-❑ ตัวแปร คือ ชื่อที่ถูกกำหนดขึ้นเพื่อใช้ในการเก็บข้อมูล ซึ่งค่าของตัวแปรสามารถเปลี่ยนแปลงได้ตลอดการทำงานของโปรแกรม โดยการตั้งชื่อตัวแปรต้องเป็นไปตามกฎการตั้งชื่อ
-
-❑ ตัวแปรในภาษาจาวา สามารถแบ่งออกเป็น 3 ประเภทหลัก ดังนี้:
-
-
-1. Instance Variable เป็นตัวแปรที่ถูกสร้างขึ้นจากคลาสเพื่อกำหนดโครงสร้างต่างๆ ของคลาส (เป็นตัวแปรชนิดที่มีคลาส)
-2. Class Variable เป็นตัวแปรที่ถูกกำหนดหรือสร้างขึ้นภายในคลาส สามารถนำไปประยุกต์ใช้กับ Instance variable ของมันทั้งหมด
-3. Local Variable เป็นตัวแปรที่ประกาศภายในเมธอด (Method) สามารถใช้งานได้เฉพาะภายในขอบเขตที่มันถูกประกาศเท่านั้น
+                android:text="  ตัวแปรคือภาชนะสำหรับจัดเก็บข้อมูล \n
+ตัวแปร JavaScript สามารถประกาศได้ 4 วิธี: \n
+โดยอัตโนมัติ \n
+โดยใช้ var \n
+โดยใช้ let \n
+โดยใช้ const
 
 "
                 android:textSize="16sp" />
@@ -97,7 +93,24 @@
                 android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
-                android:text="การสร้างตัวแปร                                                          ❑ การสร้างตัวแปรประกอบด้วย ชื่อ และ ชนิดข้อมูล รวมถึงค่าเริ่มต้นที่กำหนดให้ด้วย รูปแบบการประกาศตัวแปรคือ:                                  ชนิดข้อมูล  ชื่อตัวแปร; ตัวอย่าง: int age;                                                                                                                                                                                                                                                                    ชนิดข้อมูล ชื่อตัวแปร = ค่าข้อมูล; ตัวอย่าง: float salary = 56.7;                                                     ❑ และหากต้องการประกาศตัวแปรหลายๆ ตัวในคำสั่งเดียว จะต้องใช้เครื่องหมาย คอมม่า (,) คั่นระหว่างชื่อของตัวแปร                                                                ชนิดข้อมูล ชื่อตัวแปร1, ชื่อตัวแปร2, ชื่อตัวแปร3;                                                                   ตัวอย่าง: int day, month, year;  "
+                android:text='ตัวแปรใน JavaScript \n
+
+    ตัวแปร (Variables) ใน JavaScript ใช้สำหรับเก็บค่าข้อมูลต่างๆ ที่สามารถเปลี่ยนแปลงได้ในระหว่างการทำงานของโปรแกรม การประกาศตัวแปรใน JavaScript ทำได้โดยใช้คีย์เวิร์ด `var`, `let` หรือ `const` ตามด้วยชื่อตัวแปรที่ต้องการ ดังตัวอย่าง: \n
+var age = 25; \n
+let name = "John"; \n
+const PI = 3.14159; \n
+\n
+ var  เป็นคีย์เวิร์ดที่ใช้ประกาศตัวแปรแบบ function-scoped หรือ globally-scoped \n
+ let   เป็นคีย์เวิร์ดที่ใช้ประกาศตัวแปรแบบ block-scoped (เป็นคีย์เวิร์ดที่ถูกเพิ่มเข้ามาใน ECMAScript 6) \n
+ const เป็นคีย์เวิร์ดที่ใช้ประกาศตัวแปรค่าคงที่ ซึ่งไม่สามารถเปลี่ยนแปลงค่าได้หลังจากกำหนดค่าเริ่มต้นแล้ว \n
+\n
+นอกจากนี้ สามารถกำหนดค่าเริ่มต้นให้กับตัวแปรได้ทันทีในคำสั่งประกาศตัวแปร หรือกำหนดค่าให้กับตัวแปรภายหลังก็ได้ เช่น: \n
+\n
+let x; \n
+x = 10; \n
+\n
+let y = 20; \n
+y = 30;'
                 android:textSize="16sp" />
 
             <TextView
@@ -107,19 +120,212 @@
                 android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
-                android:text="การกำหนดค่าให้กับตัวแปร
-❑ การกำหนดค่าให้กับตัวแปรสามารถทำได้โดยใช้เครื่องหมาย เท่ากับ (=) ซึ่งมีเงื่อนไขว่า ค่าที่กำหนดให้กับตัวแปรต้องมี ชนิดข้อมูลที่ตรงกัน เช่น:
-int age = 23;
-int day = 0, month = 0, year = 0;\n
+                android:text="เมื่อใดควรใช้ var, let หรือ const? \n
+1. ประกาศตัวแปรเสมอ \n
 
-❑ เมื่อตัวแปรถูกประกาศขึ้นแล้ว จะต้องกำหนดค่าให้กับตัวแปรเอง
+2. ใช้เสมอconstเมื่อไม่ต้องการเปลี่ยนค่า \n
 
-Java จะไม่กำหนดค่าเริ่มต้นให้กับตัวแปรท้องถิ่น (Local Variable) โดยอัตโนมัติ
+3. ใช้เสมอconstหากไม่ต้องการเปลี่ยนประเภท (Arrays และ Objects) \n
 
-หากมีการเรียกใช้งานตัวแปรที่ยังไม่ได้รับการกำหนดค่า คอมไพเลอร์จะแจ้งข้อผิดพลาดว่า
+4. ใช้เฉพาะletในกรณีที่ไม่สามารถใช้ได้const \n
 
-variable might not have been initialized  ซึ่งหมายความว่า ตัวแปรนั้นอาจยังไม่มีค่าเริ่มต้น
+5. ใช้เฉพาะvarในกรณีที่คุณต้องรองรับเบราว์เซอร์รุ่นเก่า เท่านั้น \n
 "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="เหมือนกับพีชคณิต \n
+เช่นเดียวกับในพีชคณิต ตัวแปรจะเก็บค่า: \n
+let x = 5; \n
+let y = 6; \n
+\n
+เช่นเดียวกับในพีชคณิต ตัวแปรจะถูกใช้ในนิพจน์:  \n
+
+let z = x + y;  \n
+\n
+จากตัวอย่างข้างต้นคุณสามารถเดาได้ว่าผลรวมคำนวณได้เป็น 11 \n
+\n
+
+"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="ตัวระบุ JavaScript \n
+ตัวแปร JavaScript ทั้งหมดจะต้องได้ รับการระบุด้วยชื่อที่ไม่ซ้ำกัน \n
+\n
+ชื่อเฉพาะเหล่านี้เรียกว่าตัวระบุ\n
+ตัวระบุอาจเป็นชื่อสั้น (เช่น x และ y) หรือชื่อที่บรรยายลักษณะได้มากกว่า (อายุ ผลรวม ปริมาตรรวม) \n
+\n
+กฎทั่วไปในการสร้างชื่อให้กับตัวแปร (ตัวระบุเฉพาะ) มีดังนี้: \n
+
+-ชื่อสามารถประกอบด้วยตัวอักษร ตัวเลข ขีดล่าง และเครื่องหมายดอลลาร์ \n
+-ชื่อจะต้องเริ่มต้นด้วยตัวอักษร \n
+-ชื่อสามารถเริ่มต้นด้วย $ และ _ ได้ (แต่เราจะไม่ใช้เครื่องหมายนี้ในบทช่วยสอนนี้) \n
+-ชื่อจะต้องตรงตามตัวพิมพ์เล็ก/ใหญ่ (y และ Y เป็นตัวแปรที่แตกต่างกัน) \n
+-คำสงวน (เช่น คำหลัก JavaScript) ไม่สามารถนำมาใช้เป็นชื่อได้ \n
+\n
+"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='ผู้ดำเนินการมอบหมาย  \n
+ใน JavaScript เครื่องหมายเท่ากับ ( =) เป็นตัวดำเนินการ "กำหนดค่า" ไม่ใช่ตัวดำเนินการ "เท่ากับ"  \n
+            นี่ต่างจากพีชคณิต สิ่งต่อไปนี้ไม่สมเหตุสมผลในพีชคณิต:   \n
+            x = x + 5
+            อย่างไรก็ตาม ใน JavaScript มันสมเหตุสมผลมาก: มันกำหนดค่าของ x + 5 ให้กับ x \n
+            (คำนวณค่า x + 5 แล้วใส่ผลลัพธ์ลงใน x โดยค่าของ x จะเพิ่มขึ้นทีละ 5) \n
+            บันทึก  \n
+            ตัวดำเนินการ "เท่ากับ" เขียนเหมือน==ใน JavaScript \n '
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="ประเภทข้อมูล JavaScript&#10;
+ตัวแปร JavaScript สามารถเก็บตัวเลขเช่น 100 และค่าข้อความเช่น &quot;John Doe&quot;&#10;&#10;
+ในการเขียนโปรแกรม ค่าข้อความเรียกว่าสตริงข้อความ&#10;&#10;
+JavaScript สามารถจัดการข้อมูลได้หลายประเภท แต่สำหรับตอนนี้ ให้ลองนึกถึงตัวเลขและสตริงก่อน&#10;&#10;
+สตริงจะเขียนในเครื่องหมายคำพูดคู่หรือเครื่องหมายคำพูดเดี่ยว ส่วนตัวเลขจะเขียนโดยไม่ใช้เครื่องหมายคำพูด&#10;&#10;
+ถ้าใส่ตัวเลขไว้ในเครื่องหมายคำพูด จะถือเป็นสตริงข้อความ&#10;&#10;
+ตัวอย่าง&#10;
+const pi = 3.14;&#10;
+let person = &quot;John Doe&quot;;&#10;
+let answer = &#39;Yes I am!&#39;;"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='การประกาศตัวแปร JavaScript \n
+การสร้างตัวแปรใน JavaScript เรียกว่า "การประกาศ" ตัวแปร \n
+คุณประกาศตัวแปร JavaScript ด้วยvarหรือletคำหลัก: \n
+var carName; หรือ: let carName;'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='หนึ่งคำสั่ง หลายตัวแปร \n
+คุณสามารถประกาศตัวแปรได้หลายตัวในคำสั่งเดียว \n
+เริ่มต้นคำสั่งด้วยletและแยกตัวแปรด้วยเครื่องหมายจุลภาค : \n
+\n
+ตัวอย่าง \n
+let person = "John Doe", carName = "Volvo", price = 200;'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='ค่า = ไม่ได้กำหนด \n
+ในโปรแกรมคอมพิวเตอร์ ตัวแปรมักถูกประกาศโดยไม่มีค่า ค่าอาจเป็นสิ่งที่ต้องคำนวณ หรือบางอย่างที่จะให้ในภายหลัง เช่น อินพุตของผู้ใช้
+ตัวแปรที่ประกาศโดยไม่มีค่าจะมี undefinedค่าตัวแปร carName จะมีค่าundefinedหลังจากการดำเนินการคำสั่งนี้: \n
+\n
+ตัวอย่าง \n
+let carName;'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='การประกาศตัวแปร JavaScript ใหม่ \n
+ถ้าหากคุณประกาศตัวแปร JavaScript อีกครั้งด้วยvarจะไม่สูญเสียค่าของตัวแปรนั้น \n
+
+ตัวแปรcarNameจะยังคงมีค่าเป็น "Volvo" หลังจากดำเนินการคำสั่งเหล่านี้: \n
+\n
+ตัวอย่าง \n
+var carName = "Volvo"; \n
+var carName;'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='เลขคณิต JavaScript \n
+เช่นเดียวกับพีชคณิต คุณสามารถทำเลขคณิตได้โดยใช้ตัวแปร JavaScript โดยใช้ตัวดำเนินการเช่น=และ+:\n
+\n
+ตัวอย่าง \n
+let x = 5 + 2 + 3;
+'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='เครื่องหมายดอลลาร์ JavaScript $ \n
+เนื่องจาก JavaScript ถือว่าเครื่องหมายดอลลาร์เป็นตัวอักษร ตัวระบุที่มี $ จึงเป็นชื่อตัวแปรที่ถูกต้อง: \n
+\n
+ตัวอย่าง\n
+let $ = "Hello World"; \n
+let $$$ = 2; \n
+let $myMoney = 5; \n
+การใช้เครื่องหมายดอลลาร์ไม่ค่อยเป็นที่นิยมใน JavaScript แต่โปรแกรมเมอร์มืออาชีพมักใช้เป็นชื่อแทนสำหรับฟังก์ชันหลักในไลบรารี JavaScript
+\n
+ตัวอย่างเช่น ในไลบรารี JavaScript ของ jQuery ฟังก์ชันหลัก $จะใช้เพื่อเลือกองค์ประกอบ HTML ใน jQuery $("p");หมายถึง "เลือกองค์ประกอบ p ทั้งหมด"
+'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='เครื่องหมายขีดล่าง (_) ของ JavaScript \n
+เนื่องจาก JavaScript ถือว่าเครื่องหมายขีดล่างเป็นตัวอักษร ตัวระบุที่มี _ จึงเป็นชื่อตัวแปรที่ถูกต้อง: \n
+\n
+ตัวอย่าง  \n
+let _lastName = "Johnson";  \n
+let _x = 2; \n
+let _100 = 5;
+'
                 android:textSize="16sp" />
         </LinearLayout>
 

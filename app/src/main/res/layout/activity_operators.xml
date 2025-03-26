@@ -2,9 +2,243 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OperatorsActivity">
+    android:background="#C9FFC107"
+    tools:context=".DataTypesActivity">
+
+    <!-- หัวข้อ -->
+
+    <!-- ปุ่มย้อนกลับ -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#FFFFCC"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Operator"
+        android:textColor="#2E0B06"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackOperator"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#106420"
+        android:drawableBottom="@android:drawable/ic_media_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView4" />
+
+    <!-- ไอคอน -->
+
+    <!-- ScrollView ครอบเนื้อหาทั้งหมด -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="87dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView4"
+        app:layout_constraintVertical_bias="0.558"
+        app:srcCompat="@drawable/datatypes" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="369dp"
+        android:layout_height="403dp"
+        android:layout_marginTop="20dp"
+        android:fillViewport="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
+
+            <TextView
+                android:id="@+id/textOperator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="ตัวดำเนินการ JavaScript\n
+ตัวดำเนินการ Javascript ใช้เพื่อดำเนินการคำนวณทางคณิตศาสตร์และตรรกะประเภทต่างๆ \n
+\n
+ตัวอย่าง: \n
+ตัวดำเนินการกำหนดค่า =กำหนดค่า \n
+
+ตัวดำเนินการการบวก +เพิ่มค่า \n
+
+ตัวดำเนินการคูณ *คูณค่า \n
+
+ตัวดำเนินการเปรียบเทียบ >เปรียบเทียบค่า
+"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textOperator2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="ประเภทของตัวดำเนินการ JavaScript \n
+ตัวดำเนินการ JavaScript มีหลายประเภท: \n
+-ตัวดำเนินการทางคณิตศาสตร์
+-ตัวดำเนินการกำหนดค่า
+-ตัวดำเนินการเปรียบเทียบ
+-ตัวดำเนินการสตริง
+-ตัวดำเนินการเชิงตรรกะ
+-ตัวดำเนินการตามบิต
+-ตัวดำเนินการสามตัว
+-ตัวดำเนินการประเภท"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textOperator3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='ตัวดำเนินการทางคณิตศาสตร์ของ JavaScript \n
+ตัวดำเนินการเลขคณิตใช้เพื่อดำเนินการเลขคณิตกับตัวเลข: \n
+\n
+ตัวอย่างตัวดำเนินการทางคณิตศาสตร์ \n
+let a = 3; \n
+let x = (100 + 50) * a;'
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                app:srcCompat="@drawable/operator" />
+
+            <TextView
+                android:id="@+id/textOperator4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='ตัวดำเนินการกำหนดค่า JavaScript \n
+ตัวดำเนินการกำหนดค่าจะกำหนดค่าให้กับตัวแปร JavaScript\n
+ตัวดำเนินการกำหนดค่าการบวก ( +=) จะเพิ่มค่าให้กับตัวแปร \n
+\n
+ตัวอย่าง \n
+let x = 10; \n
+x += 5;'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textOperator5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='ตัวดำเนินการเปรียบเทียบ JavaScript'
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                app:srcCompat="@drawable/operator1" />
+
+            <TextView
+                android:id="@+id/textOperator6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='การเปรียบเทียบสตริง JavaScript \n
+ตัวดำเนินการเปรียบเทียบทั้งหมดด้านบนยังสามารถใช้กับสตริงได้ด้วย: \n
+\n
+ตัวอย่าง \n
+let text1 = "A"; \n
+let text2 = "B"; \n
+let result = text1 &lt; text2;'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textOperator7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='การบวกสตริงด้วย JavaScript \n
+นอกจากนี้ยัง สามารถ+ใช้เพิ่ม (เชื่อมต่อ) สตริงได้: \n
+\n
+ตัวอย่าง \n
+let text1 = "John"; \n
+let text2 = "Doe"; \n
+let text3 = text1 + " " + text2;'
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textOperator8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='การเพิ่มสตริงและตัวเลข \n
+การบวกตัวเลขสองตัวจะคืนค่าผลรวมเป็นตัวเลขเช่น 5 + 5 = 10 \n
+ \n
+การบวกตัวเลขและสตริงจะคืนค่าผลรวมเป็นสตริงที่เชื่อมต่อกัน เช่น 5 + "5" = "55" \n
+ \n
+ตัวอย่าง \n
+let x = 5 + 5;  \n
+let y = "5" + 5;  \n
+let z = "Hello" + 5;  \n
+ \n
+ผลลัพธ์ของx , yและzจะเป็น: \n
+10  \n
+55 \n
+Hello5'
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                app:srcCompat="@drawable/operator2" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/operator3" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                app:srcCompat="@drawable/operator4" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

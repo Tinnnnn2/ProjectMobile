@@ -15,7 +15,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="76dp"
         android:background="#FFFFCC"
         android:gravity="center"
         android:padding="16dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnBackDataType"
+        android:id="@+id/btnBackOperator"
         android:layout_width="68dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -71,33 +71,22 @@
             android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
 
             <TextView
-                android:id="@+id/textVariable"
+                android:id="@+id/textDatatype"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
-                android:text="          Data Type หรือที่เรียกว่า ประเภทข้อมูล        ในภาษาจาวามีประเภทข้อมูลพื้นฐานทั้งหมด 8 ชนิด 4 กลุ่ม ซึ่งจะเรียกว่า Primitive Data Type ดังนี้
-
-
-                            ➢ Logical ได้แก่ boolean
-
-
-                            ➢ Textual ได้แก่ char
-
-
-                            ➢ Integer ได้แก่ byte, short, int และ long
-
-
-                            ➢ Floating-point ได้แก่ float และ double"
+                android:text="JavaScript มีประเภทข้อมูล (Data Types) ทั้งหมด 8 ประเภท ได้แก่: \n
+String – ข้อความ\n
+Number – ตัวเลข\n
+BigInt – ตัวเลขขนาดใหญ่\n
+Boolean – ค่าความจริง (จริง/เท็จ)\n
+Undefined – ไม่ได้กำหนดค่า\n
+Null – ไม่มีค่า\n
+Symbol – ค่าที่ไม่ซ้ำกัน\n
+Object – ออบเจ็กต์ (โครงสร้างข้อมูลแบบ Key-Value)"
                 android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/tableDatatype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/table_datatype" />
 
             <TextView
                 android:id="@+id/textVariable2"
@@ -106,10 +95,50 @@
                 android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
-                android:text="ภาษาจาวาได้สร้างคลาสไว้สำหรับจัดเก็บข้อมูลแบบข้อความ มีชื่อคลาสว่า String เพื่อให้สามารถทำงานเหมือนชนิดข้อมูลพื้นฐาน เพราะฉะนั้นจะถือว่า String ไม่ใช่
-
-      Primitive Data Type"
+                android:text="ประเภทข้อมูลของวัตถุ\n
+ประเภทข้อมูลวัตถุสามารถมีทั้งวัตถุในตัวและวัตถุที่ผู้ใช้กำหนด : \n
+ประเภทวัตถุในตัวสามารถเป็นดังนี้:\n
+วัตถุ, อาร์เรย์, วันที่, แผนผัง, ชุด, อินทาเรย์, อาร์เรย์ลอย, สัญญา และอื่นๆ อีกมากมาย"
                 android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textVariable3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text='
+ตัวอย่าง \n
+Numbers: \n
+let length = 16; \n
+let weight = 7.5; \n
+\n
+
+Strings: \n
+let color = "Yellow"; \n
+let lastName = "Johnson"; \n
+\n
+
+Booleans: \n
+let x = true; \n
+let y = false; \n
+\n
+
+Object: \n
+const person = {firstName:"John", lastName:"Doe"}; \n
+\n
+
+Array object: \n
+const cars = ["Saab", "Volvo", "BMW"]; \n
+\n
+
+Date object: \n
+const date = new Date("2022-03-25"); '
+    android:textSize="16sp" />
+
+
+
         </LinearLayout>
 
     </ScrollView>
