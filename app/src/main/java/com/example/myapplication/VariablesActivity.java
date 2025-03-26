@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class VariablesActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnBackVariable;
+    private Button btnBackVariable, btn ;
     private Toolbar toolbar;
 
     @Override
