@@ -22,7 +22,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         btnOperator = findViewById(R.id.btnOperator);
         btnControlStatements = findViewById(R.id.btnControlStatements);
         btnFunctions = findViewById(R.id.btnFunctions);
-        btnBack = findViewById(R.id.btnBackDataType);
+        btnBack = findViewById(R.id.btnBackOperator);
 
         btnDataType.setOnClickListener(this);
         btnVariable.setOnClickListener(this);
@@ -50,7 +50,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         } else if (id == R.id.btnFunctions) {
             Intent intent = new Intent(this, FunctionsActivity.class);
             startActivity(intent);
-        } else if (id == R.id.btnBackDataType) {
+        } else if (id == R.id.btnBackOperator) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
