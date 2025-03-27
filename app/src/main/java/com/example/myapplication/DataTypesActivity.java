@@ -5,26 +5,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DataTypesActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btnBackDataType;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_data_types);
 
         btnBackDataType = findViewById(R.id.btnBackOperator);
+
+
         btnBackDataType.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.btnBackOperator) {
-             Intent intent = new Intent(this, MenuActivity.class);
+            Intent intent = new Intent(this, MenuActivity.class);
             startActivity(intent);
         }
     }

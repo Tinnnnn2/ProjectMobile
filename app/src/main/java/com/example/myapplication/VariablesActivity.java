@@ -39,7 +39,7 @@ public class VariablesActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_variable, menu);
+        getMenuInflater().inflate(R.menu.bottom_navigation_item, menu);
         return true;
     }
 

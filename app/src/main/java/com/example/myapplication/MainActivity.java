@@ -9,7 +9,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btnGetStart,btnHum;
+    private Button btnGetStart;
 
 
     @Override
@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnGetStart = findViewById(R.id.btnGetStart);
         btnGetStart.setOnClickListener(this);
-
     }
 
     @Override
