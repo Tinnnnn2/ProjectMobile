@@ -2,9 +2,383 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C9FFFFFF"
     tools:context=".ControlStatementsActivity">
+
+    <!-- หัวข้อ -->
+
+    <!-- ปุ่มย้อนกลับ -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#E2A025"
+        android:fontFamily="@font/tomorrow_bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Control Statements"
+        android:textColor="#2E0B06"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBackControl"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#000000"
+        android:drawableBottom="@android:drawable/ic_media_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView4" />
+
+    <ScrollView
+        android:id="@+id/scrollViewControl"
+        android:layout_width="0dp"
+        android:layout_height="620dp"
+        android:fillViewport="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
+
+            <TextView
+                android:id="@+id/textControl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="  Control Statements คือ คำสั่งที่ใช้ควบคุมการทำงานของโปรแกรมว่าควรจะ \n
+1. ตัดสินใจเลือกทาง (Conditional Statements) \n
+2. วนซ้ำ (looping) \n
+3. ทำงานตามลำดับ (sequence)"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F44336"
+                    android:text="Conditional Statements"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text=" Conditional Statements หรือ คำสั่งเงื่อนไข \n
+คือ คำสั่งที่ทำให้โปรแกรม เลือกทาง ตามเงื่อนไขที่กำหนด \n
+    ใน JavaScript มีคำสั่งเงื่อนไขดังต่อไปนี้:\n
+- ใช้ if เพื่อระบุบล็อกของโค้ดที่จะดำเนินการ หากเงื่อนไขที่ระบุเป็นจริง \n
+- ใช้ else เพื่อระบุบล็อกของโค้ดที่จะดำเนินการหากเงื่อนไขเดียวกันเป็นเท็จ \n
+- ใช้ else if เพื่อระบุเงื่อนไขใหม่ที่จะทดสอบ ถ้าเงื่อนไขแรกเป็นเท็จ \n
+- ใช้ switch เพื่อระบุบล็อกโค้ดทางเลือกมากมายที่จะดำเนินการ \nคือ คำสั่งที่ทำให้โปรแกรม เลือกทาง ตามเงื่อนไขที่กำหนด"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#C9FFFFFF"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The if Statement"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text=" ใช้ if คำสั่งเพื่อระบุบล็อกของโค้ด JavaScript ที่จะดำเนินการหากเงื่อนไขเป็นจริง \n\n
+เช่น \n
+    if (condition) { \n
+  //  block of code to be executed if the condition is true\n
+}\n
+\n
+โปรดทราบว่าifเป็นตัวอักษรพิมพ์เล็ก ตัวอักษรพิมพ์ใหญ่ (If หรือ IF) จะทำให้เกิดข้อผิดพลาด JavaScript \n
+ตัวอย่าง\n
+ให้กล่าวคำว่า “สวัสดี” หากเวลาน้อยกว่า 18:00 น. : \n\n
+ if (hour < 18) {\n
+  greeting = 'Good day' ;\n
+} \n
+ผลลัพธ์ : Good day \n "
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#C9FFFFFF"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The else Statement"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text=" ใช้ else คำสั่งเพื่อระบุบล็อกของโค้ดที่จะดำเนินการถ้าเงื่อนไขเป็นเท็จ \n\n
+เช่น \n
+    if (condition) { \n
+  //  block of code to be executed if the condition is true\n
+} else {\n
+ //  block of code to be executed if the condition is falsev\n
+ }\n
+ \n
+ตัวอย่าง\n
+หากชั่วโมงน้อยกว่า 18 ให้สร้างคำทักทายว่า 'สวัสดีวัน' หากไม่เช่นนั้น ให้สร้าง 'สวัสดีตอนเย็น' :\n\n
+if (hour < 18) {\n
+  greeting = 'Good day' ;\n
+} else { \n
+  greeting = 'Good evening'; \n
+} \n
+ผลลัพธ์ : Good day \n "
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The else if Statement"
+                    android:textAlignment="center"
+                    android:textColor="#090909"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text=" ใช้ else if คำสั่งเพื่อระบุเงื่อนไขใหม่หากเงื่อนไขแรกเป็นเท็จ \n\n
+เช่น \n
+    if (condition1) { \n
+  //  block of code to be executed if condition1 is true\n
+} else if (condition2) {\n
+ //  block of code to be executed if the condition1 is false and condition2 is true\n
+} else { \n
+ //  block of code to be executed if the condition1 is false and condition2 is false\n
+} \n
+\n
+ตัวอย่าง\n
+หากเวลาน้อยกว่า 10:00 น. ให้สร้างคำทักทายว่า 'สวัสดีตอนเช้า' หากไม่ได้ แต่มีเวลาน้อยกว่า 20:00 น. ให้สร้างคำทักทายว่า 'สวัสดีตอนเช้า' หากไม่เช่นนั้น ให้สร้างคำทักทายว่า 'สวัสดีตอนเย็น' :\n
+\n
+if (time < 10) {\n
+  greeting = 'Good morning' ;\n
+} else if (time < 20) { \n
+  greeting = 'Good day' ; \n
+} else { \n
+ greeting = 'Good evening' ;\n
+} \n
+ผลลัพธ์ : Good day \n "
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F44336"
+                    android:text="Looping"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text=" Looping หรือ การวนซ้ำ คือการทำให้โค้ดทำงานซ้ำ ๆ ตามเงื่อนไขที่กำหนด ซึ่งช่วยลดการเขียนโค้ดซ้ำซ้อน และเพิ่มประสิทธิภาพของโปรแกรม \n\n
+  Different Kinds of Loops\n
+for- วนซ้ำผ่านบล็อกโค้ดจำนวนหนึ่ง \n
+for/in- วนซ้ำผ่านคุณสมบัติของวัตถุ \n
+for/of- วนซ้ำผ่านค่าของวัตถุที่วนซ้ำได้ \n
+while- วนซ้ำผ่านบล็อกของโค้ดในขณะที่เงื่อนไขที่ระบุเป็นจริง \n
+do/while- ยังวนซ้ำผ่านบล็อกของโค้ดในขณะที่เงื่อนไขที่ระบุเป็นจริง \n
+"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The For Loop"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="  โครงสร้างของ for loop \n\n
+for (expression 1; expression 2; expression 3) { \n
+  // code block to be executed \n
+} \n
+Expression 1 → ทำงาน ครั้งเดียว ก่อนเริ่ม loop \n
+Expression 2 → เป็นเงื่อนไข ถ้า จริง (true) จะทำงานใน loop, ถ้า เท็จ (false) จะหยุด loop \n
+Expression 3 → ทำงาน ทุกครั้ง หลังจากรันโค้ดใน loop \n\n
+ตัวอย่าง\n
+for (let i = 0; i < 5; i++) { \n
+  text += 'The number is ' + i + '<br>'; \n
+} \n
+"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The For In Loop"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="  for...in เป็น loop ที่ใช้วนซ้ำ property ของ Object หรือ index ของ Array \n\n
+โครงสร้าง\n
+for (key in object) { \n
+  // code block to be executed \n
+} \n\n
+
+ตัวอย่าง\n
+const person = {fname:'John', lname:'Doe', age:25}; \n
+let text = ''; \n
+for (let x in person) { \n
+ text += person[x]; \n
+} \n
+อธิบาย : \n
+for...in จะวนซ้ำ property (key) ของ person \n
+key คือชื่อ property (fname, lname, age) \n
+person[key] คือค่าของ property ('John', 'Doe', 25) \n\n
+
+ข้อควรระวัง : \n
+for...in ไม่แนะนำให้ใช้กับ Array เพราะลำดับ index อาจไม่เป็นไปตามที่คาด\n
+มีประสิทธิภาพต่ำกว่า for หรือ forEach() \n\n
+
+Array.forEach()\n
+เป็นเมธอดของ Array ที่ใช้เรียกฟังก์ชันสำหรับ แต่ละค่า ใน Array\n
+โครงสร้าง \n
+array.forEach(function(value, index, array) { \n
+  // โค้ดที่จะทำงานในแต่ละรอบ \n
+}); \n\n
+ข้อดีของ forEach() \n
+เรียกฟังก์ชันอัตโนมัติ ให้ทำงานกับทุกค่าของ array \n
+ใช้ง่ายกว่า for loop \n
+"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
