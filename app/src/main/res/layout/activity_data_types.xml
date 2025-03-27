@@ -56,7 +56,7 @@
         app:srcCompat="@drawable/datatypes" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollViewControl"
         android:layout_width="408dp"
         android:layout_height="609dp"
         android:fillViewport="false"
@@ -72,7 +72,7 @@
             android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
 
             <TextView
-                android:id="@+id/textDatatype"
+                android:id="@+id/textControl1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"

@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/datatypes" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollViewControl"
         android:layout_width="0dp"
         android:layout_height="621dp"
         android:fillViewport="false"

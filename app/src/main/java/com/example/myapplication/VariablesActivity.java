@@ -24,13 +24,13 @@ public class VariablesActivity extends AppCompatActivity implements View.OnClick
 //        setSupportActionBar(toolbar);
 
         // ปุ่มย้อนกลับ
-        btnBackVariable = findViewById(R.id.btnBackVariable);
+        btnBackVariable = findViewById(R.id.btnBackControl);
         btnBackVariable.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.btnBackVariable) {
+        if (v.getId() == R.id.btnBackControl) {
             Intent intent = new Intent(this, MenuActivity.class);
             startActivity(intent);
             //finish(); // ปิด Activity ปัจจุบัน
