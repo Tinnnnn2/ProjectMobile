@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnBackControl"
+        android:id="@+id/btnBackcontrol"
         android:layout_width="68dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -72,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="20dp">
+                >
 
                 <TextView
                     android:id="@+id/textView13"
@@ -90,7 +90,6 @@
                 android:id="@+id/textControl2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text=" Conditional Statements หรือ คำสั่งเงื่อนไข \n
@@ -107,7 +106,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
                 android:background="#C9FFFFFF"
-                app:cardCornerRadius="20dp">
+                >
 
                 <TextView
                     android:id="@+id/textView10"
@@ -125,7 +124,6 @@
                 android:id="@+id/textControl3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text=" ใช้ if คำสั่งเพื่อระบุบล็อกของโค้ด JavaScript ที่จะดำเนินการหากเงื่อนไขเป็นจริง \n\n
@@ -148,7 +146,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
                 android:background="#C9FFFFFF"
-                app:cardCornerRadius="20dp">
+                >
 
                 <TextView
                     android:id="@+id/textView11"
@@ -166,7 +164,6 @@
                 android:id="@+id/textControl4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text=" ใช้ else คำสั่งเพื่อระบุบล็อกของโค้ดที่จะดำเนินการถ้าเงื่อนไขเป็นเท็จ \n\n
@@ -191,7 +188,7 @@ if (hour &lt; 18) {\n
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="20dp">
+                >
 
                 <TextView
                     android:id="@+id/textView12"
@@ -209,7 +206,6 @@ if (hour &lt; 18) {\n
                 android:id="@+id/textControl5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text=" ใช้ else if คำสั่งเพื่อระบุเงื่อนไขใหม่หากเงื่อนไขแรกเป็นเท็จ \n\n
@@ -239,7 +235,7 @@ if (time &lt; 10) {\n
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="20dp">
+                >
 
                 <TextView
                     android:id="@+id/textView14"
@@ -257,7 +253,6 @@ if (time &lt; 10) {\n
                 android:id="@+id/textControl6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text=" Looping หรือ การวนซ้ำ คือการทำให้โค้ดทำงานซ้ำ ๆ ตามเงื่อนไขที่กำหนด ซึ่งช่วยลดการเขียนโค้ดซ้ำซ้อน และเพิ่มประสิทธิภาพของโปรแกรม \n\n
@@ -274,7 +269,7 @@ do/while- ยังวนซ้ำผ่านบล็อกของโค้�
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="20dp">
+                >
 
                 <TextView
                     android:id="@+id/textView15"
@@ -292,7 +287,6 @@ do/while- ยังวนซ้ำผ่านบล็อกของโค้�
                 android:id="@+id/textControl7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text="  โครงสร้างของ for loop \n\n
@@ -313,7 +307,7 @@ for (let i = 0; i &lt; 5; i++) { \n
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
-                app:cardCornerRadius="20dp">
+                >
 
                 <TextView
                     android:id="@+id/textView16"
@@ -331,7 +325,6 @@ for (let i = 0; i &lt; 5; i++) { \n
                 android:id="@+id/textControl8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text="  for...in เป็น loop ที่ใช้วนซ้ำ property ของ Object หรือ index ของ Array \n\n
@@ -369,16 +362,191 @@ array.forEach(function(value, index, array) { \n
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
 
                 <TextView
                     android:id="@+id/textView17"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:background="#FFEB3B"
+                    android:text="The For Of Loop"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="  for...of เป็นคำสั่งที่ใช้วนซ้ำค่าต่างๆ ใน อาร์เรย์ (Array), สตริง (String), แมพ (Map) และโครงสร้างข้อมูลอื่นๆ ที่สามารถวนซ้ำได้ \n\n
+โครงสร้าง\n
+for (variable of iterable) { \n
+  // code block to be executed \n
+} \n
+variable – ในแต่ละรอบของลูป ค่าต่อไปของออบเจ็กต์จะถูกกำหนดให้กับตัวแปรนี้ ตัวแปรสามารถใช้ const, let, หรือ var ได้\n
+iterable – ออบเจ็กต์ที่มีคุณสมบัติ iterable (สามารถวนซ้ำได้)\n\n
+
+Looping over a String\n
+ตัวอย่าง\n
+let language = 'JavaScript'; \n
+let text = ''; \n
+for (let x of language) { \n
+text += x; \n
+} \n
+"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The While Loop"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="  While Loop ใช้สำหรับวนซ้ำบล็อกของโค้ดจนกว่าจะมีเงื่อนไขที่กำหนดเป็น จริง (true) \n\n
+โครงสร้าง\n
+while (condition) { \n
+  // code block to be executed \n
+} \n\n
+
+ในตัวอย่างนี้ โค้ดในลูปจะทำงานซ้ำไปเรื่อยๆ ตราบใดที่ตัวแปร i น้อยกว่า 10 :\n
+while (i &lt; 10) { \n
+  text += 'The number is ' + i; \n
+  i++; \n
+} \n
+ ถ้าลืมเพิ่มค่าตัวแปรที่ใช้ในเงื่อนไข (ในที่นี้คือตัวแปร i), ลูปจะทำงานไม่สิ้นสุดและอาจทำให้เบราว์เซอร์หยุดทำงาน (crash)\n\n
+"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The Do While Loop"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="
+ Do While Loop เป็นอีกแบบหนึ่งของลูป while โดยลูปนี้จะทำงานอย่างน้อย 1 ครั้งก่อนที่จะตรวจสอบเงื่อนไข หากเงื่อนไขเป็นจริงก็จะวนลูปต่อไป\n
+\nโครงสร้าง\n
+do { \n
+  // code block to be executed \n
+} \n
+while (condition);\n \n
+ในตัวอย่างนี้ ลูปจะทำงานอย่างน้อย 1 ครั้งแม้ว่าเงื่อนไขจะเป็นเท็จ เพราะบล็อกโค้ดจะถูกทำงานก่อนที่เงื่อนไขจะถูกตรวจสอบ : \n
+do { \n
+  text += 'The number is ' + i; \n
+  i++; \n
+} \n
+while (i &lt; 10); \n
+อย่าลืมเพิ่มค่าตัวแปรที่ใช้ในเงื่อนไข เพื่อไม่ให้ลูปทำงานไม่สิ้นสุด! \n
+"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F44336"
+                    android:text="Sequence Statements"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textControl12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:text="
+ คำสั่งทำงานตามลำดับ (Sequence Statements) ใน JavaScript คือ คำสั่งที่ดำเนินการตามลำดับที่เขียนในโค้ดจากบนลงล่าง โดยไม่มีการกระโดดข้ามหรือเปลี่ยนลำดับการทำงาน คำสั่งในแต่ละบรรทัดจะทำงานหนึ่งตามหนึ่ง จนกระทั่งสิ้นสุดการทำงาน \n
+ ลักษณะสำคัญ : \n
+Semicolon (;) :  \n
+ใช้ในการแยกคำสั่งแต่ละคำสั่งออกจากกัน และสามารถเขียนหลายคำสั่งในบรรทัดเดียวกันได้ \n
+การทำงานตามลำดับ :  \n
+โค้ดในบรรทัดแรกจะทำงานก่อน เมื่อเสร็จแล้วคำสั่งในบรรทัดถัดไปจะทำงานตามลำดับที่เขียนไว้ \n
+ไม่มีการกระโดดข้าม :  \n
+คำสั่งจะทำงานตามลำดับอย่างต่อเนื่อง ไม่ข้ามไปที่คำสั่งอื่นๆ \n \n
+ตัวอย่าง : \n
+&lt; html &gt;\n
+&lt; body &gt;\n
+  &lt;p id='demo'&gt;JavaScript Tutorial.&lt;/p&gt;\n
+  &lt;div id='myDIV'&gt;www.Mindphp.com&lt;/div&gt;\n
+  &lt;script&gt;\n
+    document.getElementById('demo').innerHTML = 'Learn more';  // คำสั่งที่ 1\n
+    document.getElementById('myDIV').innerHTML = 'Mindphpwebsite';  // คำสั่งที่ 2\n
+  &lt;/script&gt;\n
+&lt;/body&gt;\n
+&lt;/html&gt;\n\n
+ในตัวอย่างนี้ :\n
+คำสั่งแรกจะเปลี่ยนข้อความใน demo\n
+คำสั่งที่สองจะเปลี่ยนข้อความใน myDIV โดยทำงานตามลำดับที่เขียนไว้\n
+สรุป :\n
+คำสั่งทำงานตามลำดับใน JavaScript คือการที่คำสั่งแต่ละคำสั่งจะทำงานตามลำดับที่เขียนไว้ในโค้ด และไม่สามารถข้ามคำสั่งไปทำงานคำสั่งอื่นได้จนกว่าจะทำงานคำสั่งก่อนหน้าเสร็จสิ้น\n
+
+"
+                android:textSize="16sp" />
 
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="71dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@drawable/controlstatement_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
