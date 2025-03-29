@@ -43,16 +43,6 @@
     <!-- ไอคอน -->
 
     <!-- ScrollView ครอบเนื้อหาทั้งหมด -->
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="87dp"
-        android:layout_height="88dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textView4"
-        app:layout_constraintVertical_bias="0.558"
-        app:srcCompat="@drawable/datatypes" />
 
     <ScrollView
         android:id="@+id/scrollViewControl"
@@ -91,11 +81,27 @@
 "
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="Types of JavaScript Operators"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textOperator2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text="ประเภทของตัวดำเนินการ JavaScript \n
@@ -110,11 +116,27 @@
 -ตัวดำเนินการประเภท"
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Arithmetic Operators"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textOperator3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='ตัวดำเนินการทางคณิตศาสตร์ของ JavaScript \n
@@ -131,11 +153,27 @@ let x = (100 + 50) * a;'
                 android:layout_height="244dp"
                 app:srcCompat="@drawable/operator" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Assignment Operators"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textOperator4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='ตัวดำเนินการกำหนดค่า JavaScript \n
@@ -147,11 +185,27 @@ let x = 10; \n
 x += 5;'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Comparison Operators"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textOperator5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='ตัวดำเนินการเปรียบเทียบ JavaScript'
@@ -163,11 +217,27 @@ x += 5;'
                 android:layout_height="177dp"
                 app:srcCompat="@drawable/operator1" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript String Comparison"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textOperator6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='การเปรียบเทียบสตริง JavaScript \n
@@ -179,11 +249,27 @@ let text2 = "B"; \n
 let result = text1 &lt; text2;'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript String Addition"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textOperator7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='การบวกสตริงด้วย JavaScript \n
@@ -195,11 +281,27 @@ let text2 = "Doe"; \n
 let text3 = text1 + " " + text2;'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="Adding Strings and Numbers"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textOperator8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='การเพิ่มสตริงและตัวเลข \n
@@ -218,17 +320,68 @@ let z = "Hello" + 5;  \n
 Hello5'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Logical Operators"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
                 android:layout_height="135dp"
                 app:srcCompat="@drawable/operator2" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Type Operators"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
                 android:layout_height="102dp"
                 app:srcCompat="@drawable/operator3" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Bitwise Operators"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -239,6 +392,16 @@ Hello5'
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="85dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@drawable/operator_icon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

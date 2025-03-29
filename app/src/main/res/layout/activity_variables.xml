@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnBackControl"
+        android:id="@+id/btnBackVariable"
         android:layout_width="68dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -70,18 +70,6 @@
             android:orientation="vertical"
             android:padding="16dp"> <!-- ใส่สีพื้นหลังให้ LinearLayout ข้างใน -->
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:cardCornerRadius="20dp">
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </androidx.cardview.widget.CardView>
-
             <TextView
                 android:id="@+id/textControl1"
                 android:layout_width="match_parent"
@@ -98,11 +86,28 @@
 "
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Variables"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textControl2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='ตัวแปรใน JavaScript \n
@@ -145,11 +150,28 @@ y = 30;'
 "
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="Just Like Algebra"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text="เหมือนกับพีชคณิต \n
@@ -167,11 +189,28 @@ let z = x + y;  \n
 "
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Identifiers"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text="ตัวระบุ JavaScript \n
@@ -192,11 +231,28 @@ let z = x + y;  \n
 
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="The Assignment Operator"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='ผู้ดำเนินการมอบหมาย  \n
@@ -209,11 +265,28 @@ let z = x + y;  \n
             ตัวดำเนินการ "เท่ากับ" เขียนเหมือน==ใน JavaScript \n '
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Data Types"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text="ประเภทข้อมูล JavaScript&#10;
@@ -228,11 +301,27 @@ let person = &quot;John Doe&quot;;&#10;
 let answer = &#39;Yes I am!&#39;;"
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="Declaring a JavaScript Variable"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='การประกาศตัวแปร JavaScript \n
@@ -241,11 +330,27 @@ let answer = &#39;Yes I am!&#39;;"
 var carName; หรือ: let carName;'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="One Statement, Many Variables"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='หนึ่งคำสั่ง หลายตัวแปร \n
@@ -256,11 +361,27 @@ var carName; หรือ: let carName;'
 let person = "John Doe", carName = "Volvo", price = 200;'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="Value = undefined"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='ค่า = ไม่ได้กำหนด \n
@@ -271,11 +392,27 @@ let person = "John Doe", carName = "Volvo", price = 200;'
 let carName;'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="Re-Declaring JavaScript Variables"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='การประกาศตัวแปร JavaScript ใหม่ \n
@@ -288,11 +425,27 @@ var carName = "Volvo"; \n
 var carName;'
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Arithmetic"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='เลขคณิต JavaScript \n
@@ -303,11 +456,27 @@ let x = 5 + 2 + 3;
 '
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Dollar Sign $"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='เครื่องหมายดอลลาร์ JavaScript $ \n
@@ -323,11 +492,27 @@ let $myMoney = 5; \n
 '
                 android:textSize="16sp" />
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="JavaScript Underscore (_)"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:id="@+id/textVariable14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:padding="16dp"
                 android:text='เครื่องหมายขีดล่าง (_) ของ JavaScript \n
