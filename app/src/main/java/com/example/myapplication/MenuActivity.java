@@ -15,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btnDataType, btnVariable, btnOperator, btnControlStatements,
-            btnFunctions, btnBack;
+            btnFunctions;
     BottomNavigationView bottomNavigationView;
     TextView textView;
     @Override
@@ -29,7 +29,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         btnOperator = findViewById(R.id.btnOperator);
         btnControlStatements = findViewById(R.id.btnControlStatements);
         btnFunctions = findViewById(R.id.btnFunctions);
-        btnBack = findViewById(R.id.btnBackOperator);
+
         bottomNavigationView = findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -60,7 +60,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         btnOperator.setOnClickListener(this);
         btnControlStatements.setOnClickListener(this);
         btnFunctions.setOnClickListener(this);
-        btnBack.setOnClickListener(this);
+
     }
 
 
@@ -81,9 +81,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (id == R.id.btnFunctions) {
             Intent intent = new Intent(this, FunctionsActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.btnBackOperator) {
-            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
     }
